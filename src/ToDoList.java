@@ -86,7 +86,6 @@ public class ToDoList {
 		while (iterator.hasNext()) {
 			Task t = (Task) iterator.next();
 			System.out.println("Your tasks are " + t.getDescription());
-
 		}
 	}
 }
