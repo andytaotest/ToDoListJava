@@ -44,6 +44,8 @@ public class ToDoList {
 			if (task.isComplete() == true) completedTasks.add(task);
 		return completedTasks;
 	}
+	
+	// added main
 	public static void main(String[] args) {
 		ToDoList todoList = new ToDoList();
 		System.out.println("Enter \n 1 - to add task \n 2 - to show all task");
