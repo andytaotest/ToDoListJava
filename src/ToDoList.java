@@ -1,5 +1,8 @@
 import java.util.HashMap;
 import java.util.Scanner;
+
+import java.util.Iterator;
+
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -41,8 +44,47 @@ public class ToDoList {
 			if (task.isComplete() == true) completedTasks.add(task);
 		return completedTasks;
 	}
+
 	
 	// test
 	
 
+	public static void main(String[] args) {
+		ToDoList todoList = new ToDoList();
+		System.out.println("Enter \n 1 - to add task \n 2 - to show all task");
+		Scanner in = new Scanner(System.in);
+		String s = in.nextLine();
+		System.out.println("Your tasks are " + todoList.getAllTasks());
+		System.out.println("Enter what task to add: ");
+		s = in.nextLine();
+		Task theTask = new Task(s);
+		todoList.addTask(theTask);
+		Collection<Task> alltasks = todoList.getAllTasks();
+
+
+		Iterator iterator = alltasks.iterator();
+
+		// while loop
+		while (iterator.hasNext()) {
+			Task t = (Task) iterator.next();
+			System.out.println("Your tasks are " + t.getDescription());
+
+		}
+		System.out.println("Enter more task to add: ");
+		s = in.nextLine();
+		theTask = new Task(s);
+		todoList.addTask(theTask);
+		
+		alltasks = todoList.getAllTasks();
+
+		iterator = alltasks.iterator();
+
+		// while loop
+		while (iterator.hasNext()) {
+			Task t = (Task) iterator.next();
+			System.out.println("Your tasks are " + t.getDescription());
+		}
+	}
 }
+
+
