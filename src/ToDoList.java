@@ -42,12 +42,5 @@ public class ToDoList {
 		return completedTasks;
 	}
 	
-//	public static void main(String[] args) {
-//		System.out.println("Enter \n 1 - to add task \n 2 - to show all task");
-//		Scanner in = new Scanner(System.in);
-//        String s = in.nextLine();
-//        System.out.println("Enter what task to add "+s);
-//               
-//       
-//	}
+
 }
