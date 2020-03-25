@@ -67,6 +67,7 @@ public class ToDoList {
 
 		Iterator iterator = alltasks.iterator();
 
+		
 		// while loop
 		while (iterator.hasNext()) {
 			Task t = (Task) iterator.next();
