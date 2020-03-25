@@ -34,8 +34,7 @@ public class Task {
 		Scanner in = new Scanner(System.in);
         String s = in.nextLine();
         System.out.println("Enter what task to add "+s);
-        
-        
+               
 	}
 
 }
